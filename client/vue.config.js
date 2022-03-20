@@ -1,4 +1,7 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: process.env.NODE_ENV === 'production'
+          ? './' // prod
+          : '/', // dev
 })
