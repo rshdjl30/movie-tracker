@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import LoginView from '../views/LoginView.vue'
 import MovieView from '../views/MovieView.vue'
+import CreateMovieView from '../views/CreateMovieView.vue'
+import LookMovieView from '../views/LookMovieView.vue'
 
 const routes = [
   {
@@ -24,6 +26,16 @@ const routes = [
     path: '/movies',
     name: 'movies',
     component: MovieView
+  },
+  {
+    path: '/movies/create',
+    name: 'movies-create',
+    component: CreateMovieView
+  },
+  {
+    path: '/movies/:movieId',
+    name: 'movie',
+    component: LookMovieView
   }
 ]
 

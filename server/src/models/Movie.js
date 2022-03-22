@@ -10,8 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         genre: DataTypes.STRING,
         year: DataTypes.STRING,
         movieImageUrl: DataTypes.STRING,
-        trailerLink: DataTypes.STRING,
-        tab: DataTypes.TEXT
+        trailerLink: DataTypes.STRING
     })
 
     return Movie
